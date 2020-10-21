@@ -1,3 +1,4 @@
+// lab2 ex1
 #include <stdio.h>
 int main(void){
 	int t =2;

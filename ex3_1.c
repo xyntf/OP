@@ -1,3 +1,4 @@
+// lab1 ex3
 #include <stdio.h>
 #define B "booboo"
 #define X 10

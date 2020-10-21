@@ -1,3 +1,4 @@
+// lab1 ex7
 #include <stdio.h>
 int main(void){
 	char c1, c2;

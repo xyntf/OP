@@ -1,3 +1,4 @@
+ // lab1 ex5
  #include <stdio.h>
 int main(void){
 	int i = 1;

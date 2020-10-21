@@ -1,3 +1,4 @@
+// lab1 ex1
 #include <stdio.h>
 int main(void){
 	float c, f;

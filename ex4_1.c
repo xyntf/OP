@@ -1,3 +1,4 @@
+// lab1 ex4
 #include <stdio.h>
 #define BOOK "Kobzar"
 int main(void){

@@ -1,3 +1,4 @@
+// lab2 ex3
 #include <stdio.h>
 #define ROWS 4
 #define COLS 8

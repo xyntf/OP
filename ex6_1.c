@@ -1,3 +1,4 @@
+// lab1 ex6
 #include <stdio.h>
 #define FORMAT "%s C is cool!\n"
 int main(void){

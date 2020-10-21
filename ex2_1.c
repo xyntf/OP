@@ -1,3 +1,4 @@
+// lab 1 ex 2
 #include <stdio.h>
 #include <string.h>
 #define Q "His Hamlet was funny without being vulgar."
