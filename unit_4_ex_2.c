@@ -1,15 +1,19 @@
 #include <stdio.h>
-#include<math.h>
-int main(void){
-	printf(" Enter parameters a, b and c of your quadratic equation separated by spaces: ");
-	float a, b, c;
-	scanf("%f%*c%f%*c%f", &a, &b, &c);
-	if((b * b - 4 * a * c) > 0){
-		printf("\n Your roots are: x1 = %f; x2 = %f\n", ((-b + sqrt(b * b - 4 * a * c)) / (2 * a)), ((-b + sqrt((b * b) + 4 * a * c)) / (2 * a)));
-	} else if((b * b - 4 * a * c) < 0){
+#include <math.h>
+#include <stdlib.h>
+int main(int argc, char *argv[]){
+	//printf(" Enter parameters a, b and c of your quadratic equation separated by spaces: ");
+	double a = atof(argv[1]), b = atof(argv[2]), c = atof(argv[3]);
+	double D = b * b - 4 * a * c;
+	double x1 = ((-b + sqrt(D)) / (2 * a)), x2 = ((-b - sqrt(D)) / (2 * a));
+	double x = (-b / (2 * a));
+	//scanf("%f%*c%f%*c%f", &a, &b, &c);
+	if(D > 0){
+		printf("\n Your roots are: x1 = %f; x2 = %f\n", x1, x2);
+	} else if(D < 0){
 		printf("\n No real roots!\n");
 	} else{
-		printf("\n Your root is: x = %f\n", (-b / (2 * a)));	
+		printf("\n Your root is: x = %f\n", x);	
 	}
 	return 0;
 }
