@@ -8,12 +8,16 @@ int main(int argc, char *argv[]){
 	double x1 = ((-b + sqrt(D)) / (2 * a)), x2 = ((-b - sqrt(D)) / (2 * a));
 	double x = (-b / (2 * a));
 	//scanf("%f%*c%f%*c%f", &a, &b, &c);
-	if(D > 0){
-		printf("\n Your roots are: x1 = %f; x2 = %f\n", x1, x2);
-	} else if(D < 0){
-		printf("\n No real roots!\n");
+	if(a != 0){
+		if(D > 0){
+			printf("\n Your roots are: x1 = %f; x2 = %f\n", x1, x2);
+		} else if(D < 0){
+			printf("\n No real roots!\n");
+		} else{
+			printf("\n Your root is: x = %f\n", x);	
+		}
 	} else{
-		printf("\n Your root is: x = %f\n", x);	
+		printf("A can't be equal to zero");
 	}
 	return 0;
 }
